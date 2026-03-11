@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOgaba-main</title>
+    <!--  -->
+
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="styles/reset.css" /> -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header class="header">
+        <div class="inner">
+          <div class="left-menu">
+            <div class="logo">
+              <a href="/index.html">
+                <img src="assets/image/Logo-last.png" alt="logo-img" />
+              </a>
+            </div>
+            <a href="subpagelist.html">
+              <div class="all-view">
+                <p>전체 보기</p>
+              </div>
+            </a>
+          </div>
+          <!--  -->
+          <div class="right-menu">
+            <div class="search-box">
+              <label for="searchInput" class="sr-only"></label>
+              <input
+                id="searchInput"
+                type="text"
+                placeholder="어떤 촬영지를 찾으시나요!"
+                autocomplete="off"
+              />
+              <div class="search-icon">
+                <i class="fa-solid fa-search"></i>
+              </div>
+            </div>
+            <a href="login.html">
+              <div class="icon-my">
+                <i class="fa-solid fa-user"></i>
+              </div>
+            </a>
+            <a href="mysetting.html">
+              <div class="icon-gear">
+                <i class="fa-solid fa-gear"></i>
+              </div>
+            </a>
+          </div>
+          <!-- tablet,mobile -->
+          <div class="mb-menu">
+            <div class="search-icon">
+              <i class="fa-solid fa-search"></i>
+            </div>
+            <!--  -->
+            <div class="menu-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- hero-bg -->
+      <div class="hero-bg">
+        <img src="assets/image/main-bg.png" alt />
+      </div>
+      <!-- hero -->
+      <section class="hero-section">
+        <!-- Swiper -->
+        <div class="swiper hero-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/image/swiper1.png" alt="hero-img" />
+              <div class="slide-gr"></div>
+              <div class="slide-overlay">
+                <p class="slide-title">이태원 가자!</p>
+                <p class="slide-sub">그들의 '힙'한 반란속으로</p>
+                <a href="subdetail.html" class="slide-btn">촬영지 보러가기 ›</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/image/swiper2.png" alt="hero-img" />
+              <div class="slide-gr"></div>
+              <div class="slide-overlay">
+                <p class="slide-title">포항가자!</p>
+                <p class="slide-sub">동백의 새로운 희망</p>
+                <a href="subdetail.html" class="slide-btn">촬영지 보러가기 ›</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/image/swiper3.png" alt="hero-img" />
+              <div class="slide-gr"></div>
+              <div class="slide-overlay">
+                <p class="slide-title">제주도 가자!</p>
+                <p class="slide-sub">관식이랑 애순이 여행지</p>
+                <a href="subdetail.html" class="slide-btn">촬영지 보러가기 ›</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/image/swiper4.png" alt="hero-img" />
+              <div class="slide-gr"></div>
+              <div class="slide-overlay">
+                <p class="slide-title">수원 가자!</p>
+                <p class="slide-sub">그녀가 만든 운명 주인공이 되어보자</p>
+                <a href="subdetail.html" class="slide-btn">촬영지 보러가기 ›</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/image/swiper5.png" alt="hero-img" />
+              <div class="slide-gr"></div>
+              <div class="slide-overlay">
+                <p class="slide-title">안동 가자!</p>
+                <p class="slide-sub">나의 불꽃 속으로</p>
+                <a href="subdetail.html" class="slide-btn">촬영지 보러가기 ›</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/image/swiper6.png" alt="hero-img" />
+              <div class="slide-gr"></div>
+              <div class="slide-overlay">
+                <p class="slide-title">영월 가자!</p>
+                <p class="slide-sub">저도 그 안에 있습니까?</p>
+                <a href="subdetail.html" class="slide-btn">촬영지 보러가기 ›</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/image/swiper7.png" alt="hero-img" />
+              <div class="slide-gr"></div>
+              <div class="slide-overlay">
+                <p class="slide-title">1년에 단 하루 오픈!</p>
+                <p class="slide-sub">여우가 범의 허리를 끊었다.</p>
+                <a href="subdetail.html" class="slide-btn">촬영지 보러가기 ›</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/image/swiper8.png" alt="hero-img" />
+              <div class="slide-gr"></div>
+              <div class="slide-overlay">
+                <p class="slide-title">낙산공원 가자!</p>
+                <p class="slide-sub">You are not alone.</p>
+                <a href="subdetail.html" class="slide-btn">촬영지 보러가기 ›</a>
+              </div>
+            </div>
+          </div>
+          <!-- 스와이퍼화살표 버튼 -->
+          <div class="swiper-buttons">
+            <div class="custom-prev">
+              <img src="assets/icon/arrow-left.png" alt="hero-btn-img" />
+            </div>
+            <div class="custom-next">
+              <img src="assets/icon/arrow-right.png" alt="hero-btn-img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- history -->
+      <section class="history-section">
+        <div class="inner">
+          <!--  -->
+          <div class="history-info">
+            <div class="img-wrap">
+              <div class="history-img">
+                <img src="assets/image/history-1.png" class="history-img" />
+              </div>
+            </div>
+            <!-- -->
+            <div class="step">
+              <div>
+                드라마에 나온 장소 <br />
+                어디일까?
+              </div>
+              <div>
+                <span class="highlight">고가바</span>로 가면 <br />
+                내가 주인공이 될 수 있어요!
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="history-info">
+            <!-- -->
+            <div class="step">
+              <div>
+                가장 <span class="highlight">인기있는 촬영지</span>는 <br />
+                어디일까요?
+              </div>
+            </div>
+            <!--  -->
+            <div class="img-wrap">
+              <div class="history-img">
+                <img src="assets/image/history-2.png" class="history-img" />
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="history-info">
+            <div class="img-wrap">
+              <div class="history-img">
+                <img src="assets/image/history-3.png" class="history-img" />
+              </div>
+            </div>
+            <!-- -->
+            <div class="step">
+              <div>
+                <span class="highlight">지역별</span>로 찾아서 <br />
+                주인공이 되어보아요!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- review -->
+      <section class="review-section">
+        <div class="review-back-img">
+          <img src="assets/image/review-back-img.png" alt="review-back-img" />
+        </div>
+        <div class="inner">
+          <div class="title">
+            <p>인기있는 <span>명소후기</span> 리뷰에요</p>
+          </div>
+        </div>
+        <!-- review-swiper - Centered -->
+        <div class="swiper review-swiper">
+          <div class="swiper-wrapper">
+            <!--  -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <!--  -->
+                <div class="card-tab">
+                  <i class="fa-regular fa-comments"></i>
+                  <p>사용자 후기</p>
+                </div>
+                <!--  -->
+                <div class="card-top">
+                  <div class="top-img">
+                    <img src="assets/image/review-circle-1.png" alt="review-circle-1" />
+                  </div>
+                  <div class="title">
+                    2월 제주 유채꽃 명소 여행 코스와 <br />
+                    꿀팁 소개 :: 광치기 해변
+                  </div>
+                </div>
+                <!--  -->
+                <div class="card-caption">
+                  2월 제주에서 유채꽃과 푸른 바다를 즐길 수 있는 <br />
+                  성산 일대 여행 코스를 소개합니다. 광치기 해변의 <br />
+                  독특한 풍경과 성산일출봉의 장관을 감상하며, <br />
+                  해송갈치에서 신선한 갈치 요리를 맛보세요. 유채꽃 <br />
+                  재배단지에서 아름다운 꽃물결을 만끽하고, 가족과<br />
+                  함께 추억을 남길 수 잇는 포토존도 마련되어-
+                </div>
+                <!--  -->
+                <a href="errorpage.html">
+                  <div class="card-btn">
+                    <button>여행 가기</button>
+                  </div>
+                </a>
+                <!--  -->
+              </div>
+            </div>
+            <!--  -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <!--  -->
+                <div class="card-tab">
+                  <i class="fa-regular fa-comments"></i>
+                  <p>사용자 후기</p>
+                </div>
+                <!--  -->
+                <div class="card-top">
+                  <div class="top-img">
+                    <img src="assets/image/review-circle-2.png" alt="review-circle-2" />
+                  </div>
+                  <div class="title">
+                    떠나요~ 가족끼리 <br />
+                    모든걸 훌훌 버리고 제주도 하르방
+                  </div>
+                </div>
+                <!--  -->
+                <div class="card-caption">
+                  제주돌문화공원은 넓고 다양한 볼거리가 있어 <br />
+                  가족 여행이나 데이트에 적합한 장소입니다. <br />
+                  아이들과 함께 즐기기 좋고, 산책로와 사진 촬영 <br />
+                  명소가 많아 인생샷을 남기기에도 최적입니다. <br />
+                  좋은 추억들을 만들어 가기 좋은 곳!!
+                </div>
+                <!--  -->
+                <a href="errorpage.html">
+                  <div class="card-btn">
+                    <button>여행 가기</button>
+                  </div>
+                </a>
+                <!--  -->
+              </div>
+            </div>
+            <!--  -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <!--  -->
+                <div class="card-tab">
+                  <i class="fa-regular fa-comments"></i>
+                  <p>사용자 후기</p>
+                </div>
+                <!--  -->
+                <div class="card-top">
+                  <div class="top-img">
+                    <img src="assets/image/review-circle-3.png" alt="review-circle-3" />
+                  </div>
+                  <div class="title">
+                    구룡포 가옥거리에서 동백꽃 필 <br />
+                    무렵의 주인공 동백이 되기!
+                  </div>
+                </div>
+                <!--  -->
+                <div class="card-caption">
+                  구룡포 일본인 가옥거리는 아기자기한 일본식 <br />
+                  건물과 드라마 촬영지로 유명해 가족과 함께 <br />
+                  방문하기 좋은 곳입니다. <br />
+                  포토존이 많아 사진 찍기 좋고, <br />
+                  계단에서 바라보는 바다 풍경은 특히 아름다워요.
+                </div>
+                <!--  -->
+                <a href="errorpage.html">
+                  <div class="card-btn">
+                    <button>여행 가기</button>
+                  </div>
+                </a>
+                <!--  -->
+              </div>
+            </div>
+            <!--  -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <!--  -->
+                <div class="card-tab">
+                  <i class="fa-regular fa-comments"></i>
+                  <p>사용자 후기</p>
+                </div>
+                <!--  -->
+                <div class="card-top">
+                  <div class="top-img">
+                    <img src="assets/image/review-circle-2.png" alt="review-circle-2" />
+                  </div>
+                  <div class="title">
+                    제주 유채꽃 명소 여행 코스 꿀팁 <br />
+                    소개 :: 광치기 해변, 성산일출봉
+                  </div>
+                </div>
+                <!--  -->
+                <div class="card-caption">
+                  2월 제주에서 유채꽃과 푸른 바다를 즐길 수 있는 <br />
+                  성산 일대 여행 코스를 소개합니다. 광치기 해변의 <br />
+                  독특한 풍경과 성산일출봉의 장관을 감상하며, <br />
+                  해송갈치에서 신선한 갈치 요리를 맛보세요. <br />
+                  유채꽃 재배단지에서 아름다운 꽃물결을 만끽하고, <br />
+                  가족과 함께 추억을 남길 수 잇는 포토존도 마련되어-
+                </div>
+                <!--  -->
+                <a href="errorpage.html">
+                  <div class="card-btn">
+                    <button>여행 가기</button>
+                  </div>
+                </a>
+                <!--  -->
+              </div>
+            </div>
+            <!--  -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <!--  -->
+                <div class="card-tab">
+                  <i class="fa-regular fa-comments"></i>
+                  <p>사용자 후기</p>
+                </div>
+                <!--  -->
+                <div class="card-top">
+                  <div class="top-img">
+                    <img src="assets/image/review-circle-4.png" alt="review-circle-4" />
+                  </div>
+                  <div class="title">
+                    행궁동 데이트 ‘선재 업고 튀어’ <br />
+                    솔선 커플처럼 되기
+                  </div>
+                </div>
+                <!--  -->
+                <div class="card-caption">
+                  행궁동은 가족,친구, 연인과 함께하기 <br />
+                  좋은 여행지로 아기자기한 카페와 <br />
+                  맛집이 많아 구경거리가 풍부합니다. <br />
+                  방화수류정과 화홍문에서의 야경은 <br />
+                  특히 아름다우며, 드라마 촬영지로 유명해져 <br />
+                  인파가 많지만 여전히 매력적인 곳입니다.
+                </div>
+                <!--  -->
+                <a href="errorpage.html">
+                  <div class="card-btn">
+                    <button>여행 가기</button>
+                  </div>
+                </a>
+                <!--  -->
+              </div>
+            </div>
+            <!--  -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <!--  -->
+                <div class="card-tab">
+                  <i class="fa-regular fa-comments"></i>
+                  <p>사용자 후기</p>
+                </div>
+                <!--  -->
+                <div class="card-top">
+                  <div class="top-img">
+                    <img src="assets/image/review-circle-1.png" alt="review-circle-1" />
+                  </div>
+                  <div class="title">
+                    2월 제주 유채꽃 명소 여행 코스와 <br />
+                    꿀팁 소개 :: 광치기 해변
+                  </div>
+                </div>
+                <!--  -->
+                <div class="card-caption">
+                  2월 제주에서 유채꽃과 푸른 바다를 즐길 수 있는 <br />
+                  성산 일대 여행 코스를 소개합니다. 광치기 해변의 <br />
+                  독특한 풍경과 성산일출봉의 장관을 감상하며, <br />
+                  해송갈치에서 신선한 갈치 요리를 맛보세요. 유채꽃 <br />
+                  재배단지에서 아름다운 꽃물결을 만끽하고, 가족과<br />
+                  함께 추억을 남길 수 잇는 포토존도 마련되어-
+                </div>
+                <!--  -->
+                <a href="errorpage.html">
+                  <div class="card-btn">
+                    <button>여행 가기</button>
+                  </div>
+                </a>
+                <!--  -->
+              </div>
+            </div>
+            <!--  -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <!--  -->
+                <div class="card-tab">
+                  <i class="fa-regular fa-comments"></i>
+                  <p>사용자 후기</p>
+                </div>
+                <!--  -->
+                <div class="card-top">
+                  <div class="top-img">
+                    <img src="assets/image/review-circle-2.png" alt="review-circle-2" />
+                  </div>
+                  <div class="title">
+                    떠나요~ 가족끼리 <br />
+                    모든걸 훌훌 버리고 제주도 하르방
+                  </div>
+                </div>
+                <!--  -->
+                <div class="card-caption">
+                  제주돌문화공원은 넓고 다양한 볼거리가 있어 <br />
+                  가족 여행이나 데이트에 적합한 장소입니다. <br />
+                  아이들과 함께 즐기기 좋고, 산책로와 사진 촬영 <br />
+                  명소가 많아 인생샷을 남기기에도 최적입니다. <br />
+                  좋은 추억들을 만들어 가기 좋은 곳!!
+                </div>
+                <!--  -->
+                <a href="errorpage.html">
+                  <div class="card-btn">
+                    <button>여행 가기</button>
+                  </div>
+                </a>
+                <!--  -->
+              </div>
+            </div>
+            <!--  -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <!--  -->
+                <div class="card-tab">
+                  <i class="fa-regular fa-comments"></i>
+                  <p>사용자 후기</p>
+                </div>
+                <!--  -->
+                <div class="card-top">
+                  <div class="top-img">
+                    <img src="assets/image/review-circle-3.png" alt="review-circle-3" />
+                  </div>
+                  <div class="title">
+                    구룡포 가옥거리에서 동백꽃 필 <br />
+                    무렵의 주인공 동백이 되기!
+                  </div>
+                </div>
+                <!--  -->
+                <div class="card-caption">
+                  구룡포 일본인 가옥거리는 아기자기한 일본식 <br />
+                  건물과 드라마 촬영지로 유명해 가족과 함께 <br />
+                  방문하기 좋은 곳입니다. <br />
+                  포토존이 많아 사진 찍기 좋고, <br />
+                  계단에서 바라보는 바다 풍경은 특히 아름다워요.
+                </div>
+                <!--  -->
+                <a href="errorpage.html">
+                  <div class="card-btn">
+                    <button>여행 가기</button>
+                  </div>
+                </a>
+                <!--  -->
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <!-- work -->
+      <section class="work-section">
+        <div class="info">
+          <div class="title">
+            <h2>DRAMAㆍMOVIE</h2>
+          </div>
+          <div class="media-list">
+            <!--  -->
+            <a href="subdetail.html">
+              <div class="media-img">
+                <img src="assets/image/work-img.png" alt="work-img" />
+              </div>
+            </a>
+            <!--  -->
+            <!--  -->
+            <a href="subdetail.html">
+              <div class="media-img">
+                <img src="assets/image/work-img-2.png" alt="work-img-2" />
+              </div>
+            </a>
+            <!--  -->
+            <a href="subdetail.html">
+              <div class="media-img">
+                <img src="assets/image/work-img-3.png" alt="work-img-3" />
+              </div>
+            </a>
+            <!--  -->
+            <a href="subdetail.html">
+              <div class="media-img">
+                <img src="assets/image/work-img-4.png" alt="work-img-4" />
+              </div>
+            </a>
+            <!--  -->
+            <a href="subdetail.html">
+              <div class="media-img">
+                <img src="assets/image/work-img-5.png" alt="work-img-5" />
+              </div>
+            </a>
+            <!--  -->
+            <a href="subdetail.html">
+              <div class="media-img">
+                <img src="assets/image/work-img-6.png" alt="work-img-6" />
+              </div>
+            </a>
+            <!--  -->
+            <a href="subdetail.html">
+              <div class="media-img">
+                <img src="assets/image/work-img-7.png" alt="work-img-7" />
+              </div>
+            </a>
+            <!--  -->
+            <a href="subdetail.html">
+              <div class="media-img">
+                <img src="assets/image/work-img-8.png" alt="work-img-8" />
+              </div>
+            </a>
+            <!--  -->
+            <a href="subdetail.html">
+              <div class="media-img">
+                <img src="assets/image/work-img-9.png" alt="work-img-9" />
+              </div>
+            </a>
+            <!--  -->
+            <a href="subdetail.html">
+              <div class="media-img">
+                <img src="assets/image/work-img-10.png" alt="work-img-10" />
+              </div>
+            </a>
+            <!--  -->
+            <a href="subdetail.html">
+              <div class="media-img">
+                <img src="assets/image/work-img-11.png" alt="work-img-11" />
+              </div>
+            </a>
+            <!--  -->
+            <a href="subdetail.html">
+              <div class="media-img">
+                <img src="assets/image/work-img-12.png" alt="work-img-12" />
+              </div>
+            </a>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <!-- carousel -->
+      <section class="carousel-section">
+        <div class="track">
+          <ul class="track-line">
+            <li>#미스터 션샤인</li>
+            <li>#각시탈</li>
+            <li>#구르미 그린 달빛</li>
+            <li>#헤어질 결심</li>
+            <li>#우리들의 블루스</li>
+            <li>#웰컴투 삼달리</li>
+            <li>#리틀 포레스트</li>
+            <li>#스물다섯 스물하나</li>
+            <li>#파묘</li>
+            <li>#폭싹 속았수다</li>
+            <li>#선재 업고 튀어</li>
+            <li>#폭군의 셰프</li>
+            <li>#왕과 사는 남자</li>
+            <li>#동백꽃 필 무렵</li>
+            <li>#이태원 클라쓰</li>
+            <li>#케이팝 데몬 헌터스</li>
+          </ul>
+          <!--  -->
+          <ul class="track-line">
+            <li>#미스터 션샤인</li>
+            <li>#각시탈</li>
+            <li>#구르미 그린 달빛</li>
+            <li>#헤어질 결심</li>
+            <li>#우리들의 블루스</li>
+            <li>#웰컴투 삼달리</li>
+            <li>#리틀 포레스트</li>
+            <li>#스물다섯 스물하나</li>
+            <li>#파묘</li>
+            <li>#폭싹 속았수다</li>
+            <li>#선재 업고 튀어</li>
+            <li>#폭군의 셰프</li>
+            <li>#왕과 사는 남자</li>
+            <li>#동백꽃 필 무렵</li>
+            <li>#이태원 클라쓰</li>
+            <li>#케이팝 데몬 헌터스</li>
+          </ul>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer class="footer-section">
+        <div class="inner">
+          <div class="footer-m">
+            <ul>
+              <li>개인정보처리방침</li>
+              <li>이용약관</li>
+              <li>사업자 등록번호</li>
+            </ul>
+            <div class="copyright">Copyright © 2026 Gogaba. All rights reserved.</div>
+          </div>
+          <ul class="sns-list">
+            <li>
+              <a href="#"><img src="assets/icon/instar.png" alt="instar-icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/icon/git.png" alt="git-icon" /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/c90d92266a.js" crossorigin="anonymous"></script>
+    <!--  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

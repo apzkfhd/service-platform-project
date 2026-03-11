@@ -1,0 +1,462 @@
+@import url("https://cdn.jsdelivr.net");
+@import url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff");
+
+/*  */
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* scroll-behavior: smooth; */
+}
+body {
+  overflow-x: hidden;
+  background-color: #fffcf6;
+  font-family: "Leferi Base";
+  /* font-family: "S-CoreDream"; */
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: -0.02em;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Nanum Gothic", "Apple SD Gothic Neo", sans-serif;
+  background: #faf9f4;
+  min-height: 100vh;
+  color: #1f2937;
+}
+
+/* ===== Main Layout ===== */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.page-title {
+  margin-bottom: 32px;
+}
+
+.page-title h1 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.page-title p {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.content-layout {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+/* Profile Card */
+.profile-card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f3f4f6;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e5e7eb, #d1d5db);
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.profile-card .welcome {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.profile-card .username {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.profile-settings-btn {
+  font-size: 12px;
+  color: #6b7280;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 5px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 auto 14px;
+  white-space: nowrap;
+}
+
+.profile-settings-btn:hover {
+  background: #f3f4f6;
+}
+
+.level-badge {
+  background: #fef9f0;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 11px;
+  color: #92400e;
+}
+
+.level-badge .level-name {
+  margin-bottom: 2px;
+}
+
+.level-badge .level-next {
+  color: #b45309;
+}
+
+/* Stats Card */
+.stats-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f3f4f6;
+}
+
+.stats-card .stats-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.stat-row:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #374151;
+}
+
+.stat-value {
+  font-weight: 700;
+  font-size: 16px;
+  color: #f97316;
+}
+
+/* ===== Right Content ===== */
+.right-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border: 1px solid #fbbf24;
+  border-radius: 16px;
+  padding: 14px 24px;
+  margin-bottom: 28px;
+  font-size: 15px;
+  color: #92400e;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ===== Section ===== */
+section {
+  margin-bottom: 32px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  background: #f97316;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.add-btn {
+  font-size: 13px;
+  color: #6b7280;
+  background: none;
+  border: 1px solid #d1d5db;
+  border-radius: 20px;
+  padding: 5px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.add-btn:hover {
+  background: #f9fafb;
+}
+
+/* ===== Drama Cards ===== */
+.cards-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.drama-card {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  flex: 1;
+  min-width: 130px;
+}
+
+.drama-card.visited {
+  padding: 12px;
+  min-width: 200px;
+}
+
+.drama-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-poster {
+  border-radius: 12px;
+  height: 160px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.drama-card.visited .card-poster {
+  height: 140px;
+}
+
+.card-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #1f2937;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.card-location {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 2px 0;
+  text-align: center;
+}
+
+.card-date {
+  font-size: 11px;
+  color: #9ca3af;
+  margin: 2px 0;
+  text-align: center;
+}
+
+.card-desc {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 6px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* ===== Review Table ===== */
+.review-table {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f3f4f6;
+}
+
+.review-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  padding: 18px 24px;
+  align-items: center;
+  border-bottom: 1px solid #f9fafb;
+  transition: background 0.15s;
+}
+
+.review-row:last-child {
+  border-bottom: none;
+}
+
+.review-row:hover {
+  background: #fafaf8;
+}
+
+.review-title-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-emoji {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.review-thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.review-drama-title {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1f2937;
+}
+
+.star-rating {
+  color: #f59e0b;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.review-text {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* ===== 반응형 ===== */
+
+/* 태블릿 (768px 이하) */
+@media (max-width: 768px) {
+  /* 사이드바 + 콘텐츠 세로로 쌓기 */
+  .content-layout {
+    flex-direction: column;
+  }
+
+  /* 사이드바 너비 풀로 */
+  .sidebar {
+    width: 100%;
+    flex-direction: row; /* 프로필카드 + 통계 가로 배치 */
+    align-items: flex-start;
+  }
+
+  .profile-card,
+  .stats-card {
+    flex: 1;
+  }
+
+  /* 카드 2열 */
+  .cards-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* 리뷰 테이블 후기 숨기기 */
+  .review-table-header span:last-child,
+  .review-text {
+    display: none;
+  }
+
+  .review-table-header,
+  .review-row {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* 모바일 (480px 이하) */
+@media (max-width: 480px) {
+  main {
+    padding: 24px 16px;
+  }
+
+  /* 사이드바 세로로 */
+  .sidebar {
+    flex-direction: column;
+  }
+
+  /* 카드 1열 */
+  .cards-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* 헤더 패딩 줄이기 */
+  .header {
+    padding: 0 16px;
+  }
+
+  /* 배너 글자 크기 */
+  .banner {
+    font-size: 13px;
+  }
+}

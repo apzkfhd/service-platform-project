@@ -1,0 +1,358 @@
+/* @import url("https://cdn.jsdelivr.net"); */
+/* @import url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff"); */
+
+/* form */
+.form-group {
+  margin-bottom: 16px;
+}
+.form-group label {
+  display: block;
+  color: #fff;
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.form-group input,
+.form-group select {
+  width: 382px;
+  padding: 16px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+}
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #1a1a1a;
+  outline: none;
+}
+.form-group input:focus-visible,
+.form-group select:focus-visible {
+  border-color: #1a1a1a;
+  outline: none;
+}
+.form-error {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #f33636;
+}
+
+/* auth */
+.auth-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.auth-section .inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 170px;
+  margin-bottom: 100px;
+}
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 40px;
+  border-radius: 40px;
+  background-color: #fe7901;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.auth-container h1 {
+  margin-bottom: 12px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.auth-footer {
+  position: relative;
+}
+.auth-footer p {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  color: #1a1c26;
+}
+.auth-footer p a {
+  font-weight: 500;
+  color: #fff;
+}
+.auth-footer p a:hover {
+  text-decoration: underline;
+}
+.login-btn {
+  margin-top: 20px;
+  width: 382px;
+  padding: 18px 16px;
+  border-radius: 8px;
+  border: none;
+}
+.login-btn:hover {
+  background-color: #cccccc;
+}
+.login-btn a {
+  color: #1a1c26;
+}
+.login-btn:hover a {
+  color: #fff;
+}
+
+/* sign-up */
+.signup-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.signup-section .inner {
+  display: flex;
+  justify-content: center;
+  margin-top: 170px;
+  margin-bottom: 100px;
+}
+.signup-section .inner .form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fcaa00;
+  gap: 30px;
+  padding: 30px 40px;
+  border-radius: 40px;
+}
+.signup-section .inner .form .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.signup-section .inner .form .top h1 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+}
+.signup-section .inner .form .search {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+  gap: 40px;
+}
+.enter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.enter label {
+  font-family: "S-Corm Dream";
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+.enter input {
+  display: flex;
+  width: 382px;
+  padding: 20px 16px;
+  border-radius: 12px;
+  border: none;
+}
+.enter input:focus,
+.enter select:focus {
+  border-color: #1a1a1a;
+  outline: none;
+}
+.enter input:focus-visible,
+.enter select:focus-visible {
+  border-color: #1a1a1a;
+  outline: none;
+}
+.enter .check-id {
+  display: flex;
+  width: 106px;
+  padding: 6px 20px;
+  border-radius: 20px;
+  background-color: #888888;
+}
+.enter .check-id p {
+  color: #fff;
+  font-family: "S-Core Dream";
+  font-weight: 300;
+}
+.signup-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 382px;
+  padding: 24px 0;
+}
+.signup-btn a {
+  color: #1a1c26;
+}
+
+/* error page */
+
+:root {
+  --orange: #f7931e;
+  --orange-dark: #e07d0e;
+  --dark: #2d2d3a;
+  --bg: #f8f5ee;
+  --light-gray: #e0dad0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  background: var(--bg);
+  font-family: "Noto Sans KR", sans-serif;
+  color: var(--dark);
+}
+
+/* MAIN */
+main {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-404 {
+  position: absolute;
+  top: 35%;
+  left: 43%;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 12vw;
+  line-height: 1.2;
+  color: var(--light-gray);
+  white-space: nowrap;
+  animation: fadeInBg 1.2s ease forwards;
+  pointer-events: none;
+  /* user-select: none; */
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+
+@keyframes fadeInBg {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -44%);
+  }
+  to {
+    opacity: 0.5;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Center card */
+.card {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  animation: riseIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.brand-block {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.brand-block img {
+  width: 100%;
+  height: 100%;
+}
+
+.brand-logo-large {
+  width: 72px;
+  height: 72px;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: #1a1c26;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.btn-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 136px;
+  height: 58px;
+  padding: 12px 20px;
+  margin-top: 6px;
+  border: none;
+  box-shadow: 0 6px 24px rgba(247, 147, 30, 0.35);
+  background: var(--orange);
+  font-family: "Leferi White", sans-serif;
+  font-weight: 700;
+  color: #000;
+  transition:
+    background 0.2s,
+    transform 0.15s,
+    box-shadow 0.2s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.btn-home:hover {
+  box-shadow: 0 10px 32px rgba(247, 147, 30, 0.45);
+  background: var(--orange-dark);
+  transform: translateY(-2px);
+}
+.btn-home:active {
+  transform: translateY(0);
+}
+
+/* 기본 (데스크탑) */
+.text-not {
+  font-size: 20vw;
+}
+.text-found {
+  font-size: 12vw;
+}
+
+/* 태블릿 (768px 이하) */
+@media (max-width: 768px) {
+  .text-not {
+    font-size: 18vw;
+  }
+  .text-found {
+    font-size: 11vw;
+  }
+}
+
+/* 모바일 (480px 이하) */
+@media (max-width: 480px) {
+  .text-not {
+    font-size: 15vw;
+  }
+  .text-found {
+    font-size: 9vw;
+  }
+}
