@@ -207,18 +207,9 @@
   --light-gray: #e0dad0;
 }
 
-html,
-body {
-  height: 100%;
-  overflow-x: hidden;
-  background: var(--bg);
-  font-family: "Noto Sans KR", sans-serif;
-  color: var(--dark);
-}
-
 /* MAIN */
 main {
-  height: 700px;
+  height: 720px;
   display: flex;
   align-items: center;
   justify-content: center;
