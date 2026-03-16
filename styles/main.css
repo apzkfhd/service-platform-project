@@ -31,6 +31,9 @@ img {
   border: 0;
   vertical-align: middle;
 }
+.wrap {
+  width: 100%;
+}
 .inner {
   width: 100%;
   max-width: 1442px;
@@ -245,52 +248,72 @@ img {
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 50px 0 0;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
-.hero-swiper {
+.hero-section .swiper {
   height: 650px;
   margin-top: 90px;
   width: 100%;
-
+  height: 100%;
+  display: flex;
+  align-items: center;
   /* position: relative; */
 }
-.hero-swiper .swiper-wrapper {
+.hero-section .swiper .swiper-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
   /* justify-content: center; */
   /* justify-content: space-between; */
-  left: -70px;
+  /* left: -70px; */
 }
-.hero-swiper .swiper-slide {
+.hero-section .swiper .swiper-wrapper .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 330px !important;
-  height: 530px !important;
-  transition: all 0.2s ease;
-  /* transform: scale(0.8); */
-  transform-origin: center center;
+  /* transform-origin: center center; */
   opacity: 0.7;
+  transform: scale(0.85);
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
   overflow: visible;
+  /* height: 530px; */
 }
-.hero-swiper .swiper-slide img {
+.hero-section .swiper .swiper-wrapper .swiper-slide .slide-img {
   border-radius: 24px;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+.hero-section .swiper .swiper-wrapper .swiper-slide .slide-img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  /* border-radius: 24px; */
 }
 /* --이게 가운데 스와이퍼-- */
-.hero-swiper .swiper-slide-active {
+.hero-section .swiper .swiper-wrapper .swiper-slide-active {
   transform: scale(1);
-  width: 420px !important;
-  height: 600px !important;
-  overflow: hidden;
   z-index: 2;
   opacity: 1;
+
+  width: 100%;
+  height: 100%;
   border-radius: 32px;
   border: 5px solid rgba(254, 121, 1, 1);
+}
+.hero-section .swiper .swiper-wrapper .swiper-slide .slide-img {
+  width: 100%;
+  height: 100%;
+}
+.hero-section .swiper .swiper-wrapper .swiper-slide .slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* ---가운데 스와이퍼시 정보표시---*/
 /* 가운데 활성 슬라이드만 오버레이 표시 */
@@ -310,6 +333,7 @@ img {
   opacity: 0;
 }
 .hero-swiper .swiper-slide-active .slide-gr {
+  border-radius: 0 0 24px 24px;
   opacity: 1;
 }
 .slide-overlay {
@@ -823,6 +847,7 @@ img {
     overflow: hidden;
   }
 }
+
 /*  */
 /*  */
 /* tablet screen */
@@ -890,21 +915,19 @@ img {
   }
 
   .hero-swiper .swiper-slide {
-    width: 220px;
-    height: 380px;
-    transform: scale(0.1);
+    /* width: 220px; */
+    /* height: 380px; */
+    transform: scale(0.2);
   }
 
   .hero-swiper .swiper-slide-active {
     width: 300px;
     height: 460px;
     border-radius: 24px;
-    border: 5px solid rgba(254, 121, 1, 1);
   }
 
   .hero-swiper .swiper-slide-active .slide-overlay {
     opacity: 1;
-    transform: translateY(0);
     bottom: 30px;
     left: 24px;
   }
@@ -1015,6 +1038,38 @@ img {
 
 /* mobile screen */
 @media (max-width: 767px) {
+  .hero-section {
+    padding: 0 30px;
+  }
+  .hero-section .swiper .swiper-wrapper .swiper-slide-active {
+    transform: scale(1);
+    z-index: 2;
+    opacity: 1;
+    border-radius: 48px;
+    border: 10px solid rgba(254, 121, 1, 1);
+    overflow: hidden;
+  }
+  .hero-section .swiper .swiper-wrapper .swiper-slide-active .slide-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .hero-section .swiper .swiper-wrapper .swiper-slide-active .slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slide-gr {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* width: 300px; */
+    height: 50%;
+    background: linear-gradient(to top, rgb(0, 0, 0) 1%, transparent 100%);
+    z-index: 3;
+    pointer-events: none;
+    opacity: 0;
+  }
   /* review-section */
   .review-section .inner .title {
     font-size: 24px;
@@ -1030,5 +1085,57 @@ img {
   }
   .review-card .card-top .title {
     font-size: 8px;
+  }
+  .work-section .info .title h2 {
+    font-size: 40px;
+    white-space: nowrap;
+  }
+  .media-list {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    margin-bottom: 72px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+  .media-list .media-img {
+    width: 230px;
+    height: 320px;
+    overflow: hidden;
+  }
+}
+
+/* mobile screen */
+@media (max-width: 441px) {
+  /* review-section */
+  .review-section .inner .title {
+    font-size: 24px;
+  }
+  .review-card .card-tab {
+    left: 30%;
+  }
+  .review-card .card-tab i {
+    display: none;
+  }
+  .review-card .card-btn {
+    left: 18%;
+  }
+  .review-card .card-top .title {
+    font-size: 8px;
+  }
+  .work-section .info .title h2 {
+    font-size: 40px;
+    white-space: nowrap;
+  }
+  .media-list {
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-column-gap: 28px; */
+    grid-row-gap: 14px;
+  }
+  .media-list .media-img {
+    width: 150px;
+    height: 230px;
+    overflow: hidden;
   }
 }

@@ -5,6 +5,7 @@ const heroSwiper = new Swiper(".hero-swiper", {
   watchSlidesProgress: true,
   spaceBetween: 24,
   loop: true,
+  speed: 600,
 
   // autoplay: {
   //   delay: 2000,
