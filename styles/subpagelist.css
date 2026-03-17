@@ -192,9 +192,10 @@ img {
 /* 카드 그리드 */
 .list-grid {
   display: grid;
-  gap: 30px;
   padding-bottom: 60px;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 90px;
+  grid-row-gap: 90px;
 }
 .list-card {
   position: relative;
@@ -205,9 +206,13 @@ img {
   border-radius: var(--radius);
 }
 .list-card:hover {
+  /* box-shadow:
+    0 0 0 12px rgba(254, 121, 1, 0.5),
+    0 200px 400px 150px rgba(254, 121, 1, 1.5); */
   box-shadow:
-    0 0 0 3px rgba(254, 121, 1, 0.7),
-    0 8px 28px rgba(254, 121, 1, 0.5);
+    0 0 0 10px rgba(254, 121, 1, 0.8),
+    0 0 300px rgba(254, 121, 1, 0.9),
+    0 0 560px rgba(254, 121, 1, 0.6);
 }
 
 .list-card img {
@@ -219,7 +224,7 @@ img {
   border-radius: var(--radius);
 }
 .list-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .list-card::before {
