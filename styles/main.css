@@ -988,17 +988,16 @@ img {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    padding-top: 36px;
+    padding-bottom: 48px;
   }
   .footer-m {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 12px;
+    gap: 4px;
   }
   .footer-m ul {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 4px;
   }
   .footer-m ul li {
     padding: 0 10px;
@@ -1260,33 +1259,12 @@ img {
   .menu-content li a {
     font-size: 14px;
   }
-  .footer-section .inner {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .footer-m {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 12px;
-  }
-  .footer-m ul {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
+
   .footer-m ul li {
-    padding: 0 10px;
     font-size: 12px;
-    font-family: "S-CoreDream";
-    color: #fff;
   }
   .footer-m .copyright {
-    padding: 0 10px;
     font-size: 10px;
-    font-weight: 300;
-    color: #fffcf6;
   }
 
   .hero-bg {
@@ -1429,7 +1407,7 @@ img {
   }
   /* review-section */
   .review-section .inner .title {
-    font-size: 24px;
+    font-size: 20px;
   }
   .review-card .card-tab {
     left: 30%;
