@@ -13,7 +13,6 @@
 
   <body>
     <div class="wrap">
-      <!-- header -->
       <header class="header">
         <div class="inner">
           <div class="left-menu">
@@ -22,6 +21,21 @@
                 <img src="assets/image/Logo-last.png" alt="logo-img" />
               </a>
             </div>
+            <!--  -->
+            <ul class="gnb">
+              <li class="menu-item" data-menu="movie">영화</li>
+              <li class="menu-item" data-menu="drama">드라마</li>
+            </ul>
+
+            <div class="mega-menu">
+              <ul class="menu-content">
+                <li><a href="subpagelist.html">전체보기</a></li>
+                <li><a href="errorpage.html">최신장소</a></li>
+                <li><a href="errorpage.html">인기장소</a></li>
+                <li><a href="errorpage.html">유명장소</a></li>
+              </ul>
+            </div>
+            <!--  -->
           </div>
           <!--  -->
           <div class="right-menu">
@@ -37,16 +51,16 @@
                 <i class="fa-solid fa-search"></i>
               </div>
             </div>
-            <!-- <a href="login.html">
+            <a href="login.html">
               <div class="icon-my">
                 <i class="fa-solid fa-user"></i>
               </div>
-            </a> -->
-            <a href="login.html">
+            </a>
+            <!-- <a href="login.html">
               <div class="icon-gear">
                 <i class="fa-solid fa-gear"></i>
               </div>
-            </a>
+            </a> -->
           </div>
           <!-- tablet,mobile -->
           <div class="mb-menu">
@@ -54,9 +68,11 @@
               <i class="fa-solid fa-search"></i>
             </div>
             <!--  -->
-            <div class="menu-icon">
-              <i class="fa-solid fa-bars"></i>
-            </div>
+            <a href="login.html">
+              <div class="user-icon">
+                <i class="fa-solid fa-user"></i>
+              </div>
+            </a>
           </div>
         </div>
       </header>
@@ -79,7 +95,6 @@
         <div class="list-inner">
           <!-- 타이틀 -->
           <div class="list-header">
-            <p class="list-mini">🎞 콘텐츠 탐색</p>
             <h2>원하는대로 골라보기</h2>
             <span>지역을 선택하면 해당 촬영지를 확인할 수 있어요</span>
           </div>
@@ -88,10 +103,11 @@
               <strong>장르</strong>
               <ul class="filter-list">
                 <li class="active">전체</li>
-                <li>드라마</li>
-                <li>영화</li>
-                <li>애니메이션</li>
-                <li>예능</li>
+                <li>판타지</li>
+                <li>로맨스</li>
+                <li>미스터리</li>
+                <li>공포</li>
+                <li>SF</li>
               </ul>
             </div>
 
@@ -113,15 +129,13 @@
 
           <div class="list-grid">
             <div class="list-card">
-              <a href="subdetail.html">
-                <img src="assets/image/list/블루스.png" alt="우리들의 블루스" />
-              </a>
+              <img src="assets/image/list/블루스.png" alt="우리들의 블루스" />
               <button class="bookmark">
                 찜하기
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="16"
+                  height="16"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -642,8 +656,7 @@
           </div>
         </div>
       </section>
-
-      <!-- footer -->
+      <!--  -->
       <footer class="footer-section">
         <div class="inner">
           <div class="footer-m">
@@ -656,17 +669,22 @@
           </div>
           <ul class="sns-list">
             <li>
-              <a href="#"><img src="assets/icon/instar.png" alt="instar-icon" /></a>
+              <a href="errorpage.html">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
             </li>
             <li>
-              <a href="#"><img src="assets/icon/git.png" alt="git-icon" /></a>
+              <a href="errorpage.html">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </li>
           </ul>
         </div>
       </footer>
     </div>
-
     <!-- fontawsome -->
     <script src="https://kit.fontawesome.com/c90d92266a.js" crossorigin="anonymous"></script>
+    <script src="js/header.js"></script>
+    <script src="js/subpagelist.js"></script>
   </body>
 </html>

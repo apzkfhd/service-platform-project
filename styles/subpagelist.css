@@ -118,7 +118,7 @@ img {
 
 /* ── LIST SECTION ── */
 .list-section {
-  padding: 60px 0 0;
+  padding: 60px 50px;
   padding-bottom: -2px;
   background-color: var(--bg-cream);
 }
