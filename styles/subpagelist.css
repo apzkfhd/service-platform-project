@@ -411,7 +411,8 @@ img {
 .land {
   transition: 0.3s;
   cursor: pointer;
-  fill: #dcdcdc;
+  /* fill: #dcdcdc; */
+  fill: #b4b4b4;
   stroke: #fff;
   stroke-width: 1;
 }
