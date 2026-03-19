@@ -90,11 +90,15 @@
   text-decoration: underline;
 }
 .login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   width: 382px;
   padding: 18px 16px;
   border-radius: 8px;
-  border: none;
+  color: #1a1c26;
+  background-color: #fff;
 }
 .login-btn:hover {
   background-color: #cccccc;

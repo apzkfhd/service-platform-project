@@ -535,26 +535,27 @@ img {
   grid-row-gap: 20px;
   grid-column-gap: 20px;
 }
+
 .profile-setting ul li {
   width: 100%;
-  border-bottom: 1px solid rgba(26, 28, 38, 0.3);
-}
-.profile-setting ul li a {
   display: flex;
   justify-content: space-between;
   padding: 16px 28px;
   background-color: #fff;
+  border-bottom: 1px solid rgba(26, 28, 38, 0.3);
 }
-.profile-setting ul li a p {
+
+.profile-setting ul li p {
   font-family: "S-Core Dream";
   font-weight: 300;
   font-size: 20px;
   color: #1a1c26;
 }
-.profile-setting ul li a i {
+.profile-setting ul li i {
   font-size: 20px;
   color: #1a1c26;
 }
+.profile-setting ul li:hover p,
 .profile-setting ul li:hover i {
   color: #fe7901;
 }
