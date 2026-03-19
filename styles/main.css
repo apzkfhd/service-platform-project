@@ -86,6 +86,7 @@ img {
 .gnb {
   display: flex;
   gap: 20px;
+  z-index: 5;
 }
 
 .menu-item {
@@ -104,8 +105,8 @@ img {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
-
+  width: 100vw;
+  /* width: 100vw; */
   padding: 20px 0;
   background: rgba(255, 255, 255, 0.95);
   border-top: 1px solid #e8e8e8;
@@ -115,7 +116,7 @@ img {
   transform: translateY(-10px);
   transition: all 0.25s ease;
 
-  pointer-events: none;
+  /* pointer-events: none; */
   z-index: 50;
 }
 
@@ -124,7 +125,7 @@ img {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-  pointer-events: auto;
+  /* pointer-events: auto; */
 }
 
 /* hover 끊김 방지 */
@@ -291,7 +292,8 @@ img {
   width: 95%;
   height: 95%;
   object-fit: contain; /* 이미지 비율 유지 */
-  opacity: 0.2;
+  /* opacity: 0.2; */
+  opacity: 1;
 }
 /* ------------------------------------swiper 섹션 */
 .hero-section {
@@ -923,7 +925,7 @@ img {
     overflow: hidden;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .search-box input {
     display: flex;
     align-items: center;
@@ -938,10 +940,10 @@ img {
     flex-direction: column;
     gap: 40px;
   }
-  /* .img-wrap .history-img {
+  .img-wrap .history-img {
     width: 240px;
     height: 290px;
-  } */
+  }
 }
 /*  */
 /*  */
@@ -1198,7 +1200,7 @@ img {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    border-radius: 40px;
+    border-radius: 30px;
     width: 360px;
     height: 230px;
     margin-top: 20px;
@@ -1214,6 +1216,7 @@ img {
   }
   .review-card .card-top .title {
     font-size: 10px;
+    white-space: nowrap;
   }
 
   /* work-section */
@@ -1254,13 +1257,44 @@ img {
 
 /* mobile screen */
 @media (max-width: 767px) {
+  .swiper-slide .swiper-packge img {
+    border-radius: 24px;
+    opacity: 0.7;
+    width: 80%;
+    /* height: 100%; */
+    /* overflow: hidden; */
+  }
+  .swiper-slide-active .swiper-packge img {
+    border-radius: 32px;
+    border: 5px solid rgba(254, 121, 1, 1);
+    opacity: 5;
+  }
+  .swiper-slide-active .swiper-packge .slide-gr {
+    border-radius: 0 0 24px 24px;
+    opacity: 5;
+    position: absolute;
+    bottom: 5px;
+    /* left: 0; */
+    width: 78%;
+    height: 50%;
+    background: linear-gradient(to top, rgb(0, 0, 0) 1%, transparent 100%);
+    pointer-events: none;
+  }
   .mb-menu .search-icon .fa-search,
   .mb-menu .user-icon .fa-user {
     font-size: 16px;
   }
+
   .menu-item {
     font-size: 16px;
   }
+  .menu-content {
+    display: flex;
+    justify-content: center;
+    max-width: 1410px;
+    gap: 20px;
+  }
+
   .menu-content li a {
     font-size: 14px;
   }
@@ -1280,13 +1314,14 @@ img {
     height: 100%;
   }
   .history-info {
-    gap: 12px;
+    gap: 60px;
     /* padding: 20px 100px; */
   }
   .history-info .step,
   #history02 .step {
     font-size: 24px;
     line-height: 40px;
+    text-align: center;
   }
   .history-info .step .highlight {
     font-size: 32px;
@@ -1302,6 +1337,11 @@ img {
   /* review-section */
   .review-section .inner .title {
     font-size: 24px;
+  }
+  .review-card {
+    width: 140px;
+    height: 230px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
   }
   .review-card .card-tab {
     left: 30%;
@@ -1405,7 +1445,7 @@ img {
 /* mobile screen */
 @media (max-width: 440px) {
   .history-info {
-    gap: 12px;
+    /* gap: 12px; */
     /* padding: 10px 50px; */
   }
   .img-wrap .history-img {
@@ -1433,5 +1473,10 @@ img {
     font-size: 40px;
     /* font-weight: 900; */
     /* white-space: nowrap; */
+  }
+}
+@media (max-width: 321px) {
+  .media-list {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

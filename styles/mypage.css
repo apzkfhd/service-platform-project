@@ -442,9 +442,11 @@ section {
 
   /* 사이드바 세로로 */
   .sidebar {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
-
+  .stats-card {
+    padding: 12px 16px;
+  }
   /* 카드 1열 */
   .cards-row {
     grid-template-columns: repeat(1, 1fr);

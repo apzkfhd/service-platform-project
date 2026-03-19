@@ -6,10 +6,10 @@ const heroSwiper = new Swiper(".hero-swiper", {
   loop: true,
   speed: 600,
 
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
   navigation: {
     nextEl: ".custom-next",
     prevEl: ".custom-prev",
@@ -29,14 +29,24 @@ const heroSwiper = new Swiper(".hero-swiper", {
 
 // review swiper
 const reviewSwiper = new Swiper(".review-swiper", {
-  slidesPerView: 5,
-  spaceBetween: 30,
+  slidesPerView: 4,
+  spaceBetween: 100,
   loop: true,
   speed: 600,
-  autoplay: {
-    delay: 500,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
+  // autoplay: {
+  //   delay: 500,
+  //   disableOnInteraction: false,
+  //   pauseOnMouseEnter: true,
+  // },
+  breakpoints: {
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 60,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+    },
   },
 });
 
