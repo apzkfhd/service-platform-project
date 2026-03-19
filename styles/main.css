@@ -974,6 +974,7 @@ img {
   }
 
   .menu-item {
+    margin-top: 0px;
     font-size: 20px;
   }
   .menu-content li a {
@@ -1182,10 +1183,10 @@ img {
   .history-info .step .highlight {
     /* font-size: 24px; */
   }
-  /* .img-wrap .history-img {
-    width: 180px;
-    height: 220px;
-  } */
+  .img-wrap .history-img {
+    width: 360px;
+    height: 480px;
+  }
   /* review-section */
   .review-section .inner .title {
     font-size: 32px;
@@ -1287,6 +1288,10 @@ img {
     width: 120px;
     height: 160px;
   } */
+  .img-wrap .history-img {
+    width: 300px;
+    height: 420px;
+  }
   /* review-section */
   .review-section .inner .title {
     font-size: 24px;
