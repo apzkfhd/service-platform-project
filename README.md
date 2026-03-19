@@ -2,7 +2,7 @@
 
 UI/UX 2차 프로젝트 - 서비스 플랫폼입니다
 
-<img src="https://github.com/apzkfhd/service-platform-project/blob/main/assets/image/Logo-last.png">
+<img src="https://github.com/apzkfhd/service-platform-project/blob/main/assets/Logo%20%EC%B5%9C%EC%A2%85%EB%B0%94%ED%83%95%201.png">
 
 ## 기획 의도
 
@@ -13,13 +13,9 @@ UI/UX 2차 프로젝트 - 서비스 플랫폼입니다
 
 ## 프로젝트 기간
 
----
-
 2026.02.12 ~ 03.20
 
 ## 디자인 및 구현, 역할
-
----
 
 박선영
 
