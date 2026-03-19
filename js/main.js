@@ -33,11 +33,11 @@ const reviewSwiper = new Swiper(".review-swiper", {
   spaceBetween: 30,
   loop: true,
   speed: 600,
-  // autoplay: {
-  //   delay: 500,
-  //   disableOnInteraction: false,
-  //   pauseOnMouseEnter: true,
-  // },
+  autoplay: {
+    delay: 500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
 });
 
 //
