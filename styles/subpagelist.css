@@ -473,22 +473,22 @@ img {
 
 /* 연결선 */
 .spot-card::after {
-  content: "";
+  /* content: "";
   position: absolute;
   top: 50%;
   width: 80px;
   height: 1px;
-  background: #bbb;
+  background: #bbb; */
 }
 
 .spot1::after,
 .spot4::after {
-  left: -80px;
+  /* left: -80px; */
 }
 
 .spot2::after,
 .spot3::after {
-  right: -80px;
+  /* right: -80px; */
 }
 
 /* 카드 위치 */
