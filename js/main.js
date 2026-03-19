@@ -48,7 +48,10 @@ panels.forEach((panel, index) => {
   ScrollTrigger.create({
     trigger: panel,
     start: "top top",
+    end: "+=100%",
     pin: true,
     pinSpacing: false,
+    scrub: 1,
+    anticipatePin: 1,
   });
 });

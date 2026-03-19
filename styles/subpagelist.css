@@ -118,7 +118,6 @@ img {
 
 /* ── LIST SECTION ── */
 .list-section {
-  padding: 60px 50px;
   padding-bottom: -2px;
   background-color: var(--bg-cream);
 }
@@ -168,25 +167,35 @@ img {
 .filter-group strong {
   min-width: 36px;
   font-size: 40px;
-  font-weight: 300;
+  font-weight: 400;
+  cursor: pointer;
+}
+.filter-group strong:hover {
+  color: #fe7901;
+  font-weight: 500;
 }
 .filter-list {
   display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  list-style: none;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+  /* list-style: none; */
 }
 .filter-list li {
-  padding: 4px 2px;
+  height: 100%;
+  padding: 2px 8px;
+  border-radius: 4px;
   font-size: 30px;
+  font-weight: 400;
   color: var(--text-gray);
   transition: color 0.2s;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
 }
 
 .filter-list li:hover {
-  border-bottom: 2px solid #f39c12;
-  color: #f39c12;
+  border-color: #f39c12;
+  font-weight: 600;
+  color: #fe7901;
 }
 
 /* 카드 그리드 */
@@ -335,14 +344,15 @@ img {
   background: #f5f5f5;
   text-align: center;
 }
-.mini-map {
+/* .mini-map {
   font-size: 20px;
   font-weight: 500;
   color: var(--orange);
   text-transform: uppercase;
   letter-spacing: 3px;
-}
+} */
 .title {
+  margin-top: 30px;
   margin-bottom: 10px;
   font-size: 32px;
   color: #f39c12;
