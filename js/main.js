@@ -6,10 +6,10 @@ const heroSwiper = new Swiper(".hero-swiper", {
   loop: true,
   speed: 600,
 
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".custom-next",
     prevEl: ".custom-prev",
@@ -33,11 +33,11 @@ const reviewSwiper = new Swiper(".review-swiper", {
   spaceBetween: 100,
   loop: true,
   speed: 600,
-  // autoplay: {
-  //   delay: 500,
-  //   disableOnInteraction: false,
-  //   pauseOnMouseEnter: true,
-  // },
+  autoplay: {
+    delay: 500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
   breakpoints: {
     768: {
       slidesPerView: 5,
