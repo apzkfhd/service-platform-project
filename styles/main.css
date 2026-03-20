@@ -93,12 +93,13 @@ header {
 .gnb .menu-item {
   padding-top: 15px;
 }
-.gnb .menu-item a {
+.gnb .menu-item p {
   font-size: 24px;
   font-weight: 700;
   color: #1a1c26;
+  cursor: context-menu;
 }
-.gnb .menu-item:hover a {
+.gnb .menu-item:hover p {
   color: #fe7901;
 }
 .gnb .menu-item .sub-menu {
