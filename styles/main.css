@@ -273,8 +273,8 @@ header {
   width: 95%;
   height: 95%;
   object-fit: contain; /* 이미지 비율 유지 */
-  /* opacity: 0.2; */
-  opacity: 0.8;
+  opacity: 0.2;
+  /* opacity: 0.8; */
 }
 /* ------------------------------------swiper 섹션 */
 .hero-section {
