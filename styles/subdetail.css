@@ -1044,12 +1044,12 @@ img {
     display: flex;
     color: #fff;
     font-family: "S-CoreDream";
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
   }
   .info-wrap .info-top .short-cut {
     font-family: "S-CoreDream";
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 600;
     color: #fff;
   }
@@ -1132,7 +1132,8 @@ img {
   }
   .place-info {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     margin-top: 120px;
   }
@@ -1218,8 +1219,37 @@ img {
     border-radius: 30px;
     border: 1px solid #000;
   }
+  .info-wrap .info-top .title {
+    display: flex;
+    color: #fff;
+    font-family: "S-CoreDream";
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .container-info .caption {
+    padding: 0 20px;
+    font-family: "S-Core Dream";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
-
+@media (max-width: 590px) {
+  .container-info .info-wrap {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 330px;
+  }
+  .info-wrap .info-top {
+    gap: 6px;
+  }
+  .info-wrap ul li {
+    font-size: 14px;
+  }
+  .info-wrap .location {
+    font-size: 12px;
+  }
+}
 /* posting-section */
 @media (max-width: 1023px) {
   .posting-section .inner {
@@ -1230,6 +1260,7 @@ img {
     width: 100%;
     margin-top: 24px;
     margin-bottom: 180px;
+    padding: 0 20px;
   }
   .posting-title {
     display: flex;
@@ -1257,7 +1288,7 @@ img {
     display: flex;
     justify-content: flex-end;
     padding: 12px 0;
-    width: 767px;
+    width: 640px;
     border-bottom: 1px solid rgba(26, 28, 38, 0.3);
   }
   .post-area .links {
@@ -1281,7 +1312,7 @@ img {
     justify-content: center;
     gap: 20px;
     padding: 20px 0;
-    width: 767px;
+    width: 640px;
   }
 
   .swiper {
@@ -1289,8 +1320,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 767px;
-    height: 470px;
+    width: 640px;
+    height: 343px;
   }
   .swiper-wrapper {
     position: relative;
@@ -1334,16 +1365,13 @@ img {
     overflow: hidden;
   }
   .photo-info .review-list ul li .review-upload-title {
-    position: absolute;
     top: 42%;
     left: 15%;
-    color: #fff;
-    font-family: "S-Core Dream";
-    font-weight: 500;
+    font-size: 14px;
   }
   .photo-info .review-list ul li img {
-    width: 240px;
-    height: 160px;
+    width: 200px;
+    height: 120px;
     object-fit: cover;
   }
   .detailed-info,
@@ -1351,7 +1379,7 @@ img {
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 767px;
+    max-width: 640px;
   }
   .detailed-info .title,
   .tip-info .title {
@@ -1397,13 +1425,13 @@ img {
   }
   .tip-info .inr-wrap .inr {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 12px;
     grid-column-gap: 40px;
   }
   .tip-info .inr-wrap .inr .inr-info {
     display: flex;
-    gap: 24px;
+    gap: 12px;
   }
   .tip-info .inr-wrap .inr .inr-info strong {
     width: 95px;
@@ -1417,6 +1445,7 @@ img {
     font-weight: 500;
     color: #1a1c26;
     font-size: 14px;
+    white-space: nowrap;
   }
 }
 @media (max-width: 767px) {
@@ -1474,13 +1503,8 @@ img {
     font-size: 14px;
   }
   .photo-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px 0;
-    width: 767px;
+    gap: 8px;
+    width: 375px;
   }
 
   .swiper {
@@ -1515,10 +1539,7 @@ img {
     position: relative;
   }
   .photo-info .review-list ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
+    gap: 4px;
   }
   .photo-info .review-list ul li {
     position: relative;
@@ -1529,16 +1550,14 @@ img {
     overflow: hidden;
   }
   .photo-info .review-list ul li .review-upload-title {
-    position: absolute;
     top: 42%;
     left: 15%;
-    color: #fff;
-    font-family: "S-Core Dream";
-    font-weight: 500;
+    font-size: 8px;
+    /* white-space: nowrap; */
   }
   .photo-info .review-list ul li img {
-    width: 120px;
-    height: 80px;
+    width: 115px;
+    height: 75px;
     object-fit: cover;
   }
   .detailed-info,
