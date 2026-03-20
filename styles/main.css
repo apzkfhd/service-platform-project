@@ -963,7 +963,7 @@ header {
   .gnb .menu-item {
     padding-top: 0px;
   }
-  .gnb .menu-item a {
+  .gnb .menu-item p {
     font-size: 20px;
   }
   .gnb .menu-item .sub-menu {
@@ -1287,7 +1287,7 @@ header {
   .gnb .menu-item {
     padding-top: 0px;
   }
-  .gnb .menu-item a {
+  .gnb .menu-item p {
     font-size: 18px;
   }
   .gnb .menu-item .sub-menu {
