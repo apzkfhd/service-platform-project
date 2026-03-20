@@ -123,8 +123,8 @@ header {
 }
 .gnb .menu-item .sub-menu .sub-inner {
   width: 100%;
-  max-width: 1442px;
-  padding: 0 250px;
+  max-width: 1441px;
+  padding: 0 240px;
   display: flex;
   gap: 60px;
 }
